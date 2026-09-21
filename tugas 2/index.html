@@ -1,80 +1,140 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil Saya - Rehan Ramadani</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil Mahasiswa</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <div class="header-container">
-      <h1>Profil Saya</h1>
-      <nav>
-        <ul>
-          <li><a href="#tentang">Tentang Saya</a></li>
-          <li><a href="#pengalaman">Pengalaman</a></li>
-          <li><a href="https://www.dicoding.com/users/rehan_ramadanifxda/academies" target="_blank" rel="noopener noreferrer">Profil Dicoding</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header>
+        <div class="container">
+            <h1>Profil Mahasiswa</h1>
+            <p>Website sederhana untuk memperkenalkan diri</p>
 
-  <main>
-    <div id="content">
-      <article id="tentang" class="card">
-        <h2>Tentang Saya</h2>
-        <p>Halo! Saya seorang mahasiswa yang berminat pada pengembangan web dan teknologi informasi. 
-        Saat ini saya sedang mendalami pemrograman web dasar untuk memahami struktur HTML, 
-        gaya tampilan dengan CSS, serta pembuatan tata letak yang responsif.</p>
-      </article>
+            <nav>
+                <a href="#beranda">Beranda</a>
+                <a href="#artikel">Artikel</a>
+                <a href="#tentang">Tentang Saya</a>
+                <a href="https://www.dicoding.com/users/pahmii/academies"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Profil Dicoding
+                </a>
+            </nav>
+        </div>
+    </header>
 
-      <article id="pengalaman" class="card">
-        <h2>Pengalaman & Pembelajaran</h2>
-        <div class="timeline">
+    <main id="beranda" class="container">
 
-          <div class="timeline-item">
-            <span class="badge">2026</span>
-            <h3>Studi Pemrograman Web Dasar</h3>
-            <p class="institution">Dicoding Academy</p>
-            <p>Mempelajari fundamental pembuatan website modern mencakup struktur dokumen semantik dengan HTML5, styling responsif menggunakan CSS3, dan pengelolaan tata letak web.</p>
-          </div>
+        <div class="content">
 
-          <div class="timeline-item">
-            <span class="badge">2025 - Sekarang</span>
-            <h3>Pengembangan Logika & Algoritma</h3>
-            <p class="institution">Studi Akademik</p>
-            <p>Aktif menyelesaikan berbagai tugas pemrograman, analisis kompleksitas algoritma (Big-O), pemahaman struktur data, serta alur sistem informasi.</p>
-          </div>
+            <article id="artikel">
+                <h2>Selamat Datang di Website Saya</h2>
+
+                <p>
+                    Halo! Selamat datang di website profil saya.
+                    Website ini dibuat sebagai bagian dari submission
+                    proyek akhir kelas Belajar Dasar Pemrograman Web.
+                </p>
+
+                <p>
+                    Melalui website ini, saya ingin memperkenalkan
+                    diri, latar belakang pendidikan, serta beberapa
+                    hal yang sedang saya pelajari di bidang teknologi.
+                </p>
+            </article>
+
+            <article>
+                <h2>Tentang Pendidikan Saya</h2>
+
+                <p>
+                    Saat ini saya sedang menempuh pendidikan di
+                    Universitas Nusantara PGRI Kediri dan memiliki
+                    ketertarikan terhadap dunia teknologi informasi.
+                </p>
+
+                <h3>Hal yang Sedang Saya Pelajari</h3>
+
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Web Development</li>
+                </ul>
+            </article>
 
         </div>
-      </article>
-    </div>
 
-    <aside class="card">
-      <img src="foto.jpeg" alt="Foto Profil REHAN RAMADANI" class="profile-img">
-      <h3>Biodata</h3>
-      <table class="bio-table">
-        <tr>
-          <th>Nama</th>
-          <td>REHAN RAMADANI</td>
-        </tr>
-        <tr>
-          <th>Status</th>
-          <td>Mahasiswa</td>
-        </tr>
-        <tr>
-          <th>Fokus</th>
-          <td>Web Development</td>
-        </tr>
-      </table>
-    </aside>
-  </main>
+        <aside id="tentang">
+            <h2>Tentang Saya</h2>
 
-  <footer>
-    <p>&copy; 2026 REHAN RAMADANI - Tugas Web Profil</p>
-  </footer>
+            <img
+                src="https://i.ibb.co.com/3mT69dSd/file-00000000da4481fbac5b4b60a861e747.png"
+                alt="Foto profil Muhammad Fahmi Irsyad"
+                class="profile-image">
+
+            <h3>Muhammad Fahmi Irsyad</h3>
+
+            <p class="status">Mahasiswa</p>
+
+            <div class="biodata">
+                <p>
+                    <strong>Nama:</strong>
+                    Muhammad Fahmi Irsyad
+                </p>
+
+                <p>
+                    <strong>NPM:</strong>
+                    2513020084
+                </p>
+
+                <p>
+                    <strong>Prodi:</strong>
+                    Sistem Informasi
+                </p>
+
+                <p>
+                    <strong>Asal:</strong>
+                    Nganjuk
+                </p>
+
+                <p>
+                    <strong>Universitas:</strong>
+                    Universitas Nusantara PGRI Kediri
+                </p>
+
+                <p>
+                    <strong>Hobi:</strong>
+                    Analisis fenomena
+                </p>
+            </div>
+
+            <a
+                href="https://www.dicoding.com/users/pahmii/academies"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="dicoding-link">
+                Lihat Profil Dicoding
+            </a>
+        </aside>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                &copy; 2026 Muhammad Fahmi Irsyad.
+                Semua Hak Dilindungi.
+            </p>
+        </div>
+    </footer>
 
 </body>
+
 </html>
