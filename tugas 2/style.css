@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --blue: #1769e0;
+    --blue-dark: #0d47a1;
+    --blue-light: #eaf3ff;
+    --white: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --border: #dbe5f1;
+    --background: #f5f9ff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--background);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: min(1100px, 100%);
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+/* HEADER */
+
+header {
+    background: var(--white);
+    border-bottom: 4px solid var(--blue);
+    padding: 2rem 0;
+    box-shadow: 0 4px 15px rgba(23, 105, 224, 0.08);
+}
+
+header h1 {
+    color: var(--blue-dark);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+}
+
+header p {
+    margin-top: 0.4rem;
+    color: var(--muted);
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+}
+
+nav a {
+    padding: 0.55rem 1rem;
+    background: var(--blue-light);
+    color: var(--blue-dark);
+    border: 1px solid #c9dcf7;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+nav a:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+/* MAIN - FLEXBOX */
+
+main {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+/* CONTENT */
+
+.content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* ARTICLE & ASIDE */
+
+article,
+aside {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.8rem;
+    box-shadow: 0 8px 25px rgba(31, 41, 55, 0.06);
+}
+
+article {
+    flex: 1;
+}
+
+aside {
+    flex: 1;
+}
+
+/* HEADING */
+
+article h2,
+aside h2 {
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.7rem;
+    color: var(--blue-dark);
+    border-bottom: 2px solid var(--blue-light);
+}
+
+article h3 {
+    margin-top: 1.2rem;
+}
+
+/* PARAGRAPH */
+
+article p {
+    margin-bottom: 1rem;
+}
+
+/* PROFILE IMAGE */
+
+.profile-image {
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    border: 3px solid var(--white);
+    outline: 2px solid var(--blue);
+    border-radius: 10px;
+}
+
+/* PROFILE */
+
+aside h3 {
+    color: var(--blue-dark);
+    margin-bottom: 0.25rem;
+}
+
+.status {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.3rem 0.7rem;
+    background: var(--blue-light);
+    color: var(--blue-dark);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* BIODATA */
+
+.biodata {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.biodata p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.9rem;
+}
+
+.biodata strong {
+    min-width: 100px;
+    color: var(--blue-dark);
+}
+
+/* LIST */
+
+article ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 1rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+article li {
+    padding: 0.5rem 0.9rem;
+    background: var(--blue-light);
+    color: var(--blue-dark);
+    border: 1px solid #c9dcf7;
+    border-radius: 7px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* DICODING BUTTON */
+
+.dicoding-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.dicoding-link:hover {
+    background: var(--blue-dark);
+}
+
+/* FOOTER */
+
+footer {
+    padding: 1.5rem 0;
+    background: var(--white);
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+footer p {
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+    main {
+        flex-direction: column;
+    }
+
+    .content,
+    aside {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    header {
+        padding: 1.5rem 0;
+    }
+
+    nav {
+        gap: 0.4rem;
+    }
+
+    nav a {
+        padding: 0.45rem 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    main {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    article,
+    aside {
+        padding: 1.3rem;
+    }
+
+    .profile-image {
+        width: 95px;
+        height: 95px;
+    }
+
+    .biodata p {
+        font-size: 0.82rem;
+    }
+}
